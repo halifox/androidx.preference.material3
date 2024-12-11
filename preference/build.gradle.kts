@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("maven-publish")
 }
 
 android {
@@ -42,4 +43,29 @@ dependencies {
     api("androidx.recyclerview:recyclerview:1.3.2")
     api("androidx.slidingpanelayout:slidingpanelayout:1.2.0")
     api("com.google.android.material:material:1.12.0")
+}
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                name = "github"
+                setUrl("https://maven.pkg.github.com/halifox/androidx.preference.material3")
+                credentials {
+                    username = System.getenv("GITHUB_ACTOR")
+                    password = System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
+        publications {
+            create<MavenPublication>("maven") {
+                from(components["release"])
+                groupId = "androidx.preference"
+                artifactId = "preference-ktx-md3"
+                version = "1.2.1-alpha01"
+            }
+        }
+    }
 }
