@@ -24,8 +24,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
+import androidx.preference.compat.SeekBar;
+import androidx.preference.compat.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import androidx.preference.R;

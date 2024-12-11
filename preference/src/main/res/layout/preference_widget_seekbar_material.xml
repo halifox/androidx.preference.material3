@@ -94,7 +94,7 @@
             Note: we set 0dp padding at the start and end of this seekbar to allow it to properly
             fit into the layout, but this means that there's no leeway on either side for touch
             input - this might be something we should reconsider down the line. -->
-            <SeekBar
+            <androidx.preference.compat.SeekBar
                 android:id="@+id/seekbar"
                 android:layout_width="0dp"
                 android:layout_weight="1"

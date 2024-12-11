@@ -75,7 +75,7 @@
                 android:layout_alignLeft="@android:id/title"
                 android:clipChildren="false"
                 android:clipToPadding="false">
-            <SeekBar
+            <androidx.preference.compat.SeekBar
                     android:id="@+id/seekbar"
                     android:layout_width="0dp"
                     android:layout_weight="1"
