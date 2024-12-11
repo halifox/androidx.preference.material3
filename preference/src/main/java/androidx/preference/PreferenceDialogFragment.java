@@ -17,7 +17,7 @@
 package androidx.preference;
 
 
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -37,6 +37,8 @@ import android.widget.TextView;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.RequiresApi;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -153,7 +155,7 @@ public abstract class PreferenceDialogFragment extends android.app.DialogFragmen
         final Context context = getActivity();
         mWhichButtonClicked = DialogInterface.BUTTON_NEGATIVE;
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(context)
+        final MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(context)
                 .setTitle(mDialogTitle)
                 .setIcon(mDialogIcon)
                 .setPositiveButton(mPositiveButtonText, this)
