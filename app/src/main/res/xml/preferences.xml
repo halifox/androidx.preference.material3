@@ -1,64 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- 简单的Preference示例 -->
-    <Preference
-        android:key="simple_preference"
-        android:summary="这是一个简单的设置选项"
-        android:title="简单设置" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="checkbox_preference"
+        android:summary="勾选以启用功能"
+        android:title="复选框设置 CheckBoxPreference" />
 
-    <!-- SwitchPreferenceCompat 示例 -->
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:key="switch_preference"
-        android:summary="启用或禁用此功能"
-        android:title="启用功能" />
+    <DropDownPreference
+        android:defaultValue="option_1"
+        android:entries="@array/options_entries"
+        android:entryValues="@array/options_values"
+        android:key="dropdown_preference"
+        android:summary="请选择一个选项"
+        android:title="选择选项 DropDownPreference" />
 
-    <SwitchPreference
-        android:defaultValue="true"
-        android:key="switch_preference"
-        android:summary="启用或禁用此功能"
-        android:title="启用功能" />
-
-    <!-- EditTextPreference 示例 -->
     <EditTextPreference
         android:hint="输入内容"
         android:inputType="text"
         android:key="edittext_preference"
         android:summary="请输入文本值"
-        android:title="输入设置" />
+        android:title="输入设置 EditTextPreference" />
 
-    <!-- ListPreference 示例 -->
+
     <ListPreference
         android:defaultValue="option_1"
         android:entries="@array/list_options"
         android:entryValues="@array/list_option_values"
         android:key="list_preference"
         android:summary="从列表中选择一个选项"
-        android:title="选择设置" />
+        android:title="选择设置 ListPreference" />
 
-    <!-- CheckBoxPreference 示例 -->
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="checkbox_preference"
-        android:summary="勾选以启用功能"
-        android:title="复选框设置" />
+    <MultiSelectListPreference
+        android:entries="@array/multi_select_options"
+        android:entryValues="@array/multi_select_values"
+        android:key="multi_select_preference"
+        android:summary="从选项中选择多个值"
+        android:title="多选设置 MultiSelectListPreference" />
 
-    <!-- SeekBarPreference 示例 -->
+
+    <Preference
+        android:key="simple_preference"
+        android:summary="Preference"
+        android:title="这是一个简单的设置选项 Preference" />
+
+    <PreferenceCategory
+        android:key="settings_category"
+        android:summary="PreferenceCategory"
+        android:title="偏好类别 PreferenceCategory">
+
+        <Preference
+            android:key="simple_preference"
+            android:summary="Preference"
+            android:title="这是一个简单的设置选项2 Preference" />
+
+    </PreferenceCategory>
+
+
     <SeekBarPreference
         android:defaultValue="50"
         android:key="seekbar_preference"
         android:max="100"
         android:stepSize="1"
         android:summary="拖动滑块以调整音量"
-        android:title="音量设置" />
+        android:title="音量设置 SeekBarPreference" />
 
-    <!-- MultiSelectListPreference 示例 -->
-    <MultiSelectListPreference
-        android:entries="@array/multi_select_options"
-        android:entryValues="@array/multi_select_values"
-        android:key="multi_select_preference"
-        android:summary="从选项中选择多个值"
-        android:title="多选设置" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_preference"
+        android:summary="启用或禁用此功能"
+        android:title="启用功能 SwitchPreference" />
 
-</androidx.preference.PreferenceScreen>
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="switch_preference"
+        android:summary="启用或禁用此功能"
+        android:title="启用功能 SwitchPreferenceCompat" />
+
+</PreferenceScreen>

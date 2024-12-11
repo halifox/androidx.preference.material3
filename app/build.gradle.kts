@@ -48,5 +48,5 @@ dependencies {
 
     implementation(project(":preference"))
 
-    implementation("androidx.preference:preference-ktx:1.2.1")
+    compileOnly("androidx.preference:preference-ktx:1.2.1")
 }

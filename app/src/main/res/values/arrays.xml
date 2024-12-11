@@ -25,4 +25,16 @@
         <item>value_b</item>
         <item>value_c</item>
     </string-array>
+
+    <string-array name="options_entries">
+        <item>选项1</item>
+        <item>选项2</item>
+        <item>选项3</item>
+    </string-array>
+
+    <string-array name="options_values">
+        <item>option_1</item>
+        <item>option_2</item>
+        <item>option_3</item>
+    </string-array>
 </resources>
