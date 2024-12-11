@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ListPreference 选项 -->
+    <string-array name="list_options">
+        <item>选项1</item>
+        <item>选项2</item>
+        <item>选项3</item>
+    </string-array>
+
+    <string-array name="list_option_values">
+        <item>option_1</item>
+        <item>option_2</item>
+        <item>option_3</item>
+    </string-array>
+
+    <!-- MultiSelectListPreference 选项 -->
+    <string-array name="multi_select_options">
+        <item>选项A</item>
+        <item>选项B</item>
+        <item>选项C</item>
+    </string-array>
+
+    <string-array name="multi_select_values">
+        <item>value_a</item>
+        <item>value_b</item>
+        <item>value_c</item>
+    </string-array>
+</resources>
