@@ -64,7 +64,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "androidx.preference"
                 artifactId = "preference-ktx-md3"
-                version = "1.2.1-alpha01"
+                version = System.getenv("VERSION")
             }
         }
     }
