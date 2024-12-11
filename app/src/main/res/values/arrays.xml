@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- ListPreference 选项 -->
-    <string-array name="list_options">
-        <item>选项1</item>
-        <item>选项2</item>
-        <item>选项3</item>
+    <!-- 下拉列表选项 -->
+    <string-array name="dropdown_entries">
+        <item>模式1</item>
+        <item>模式2</item>
+        <item>模式3</item>
     </string-array>
-
-    <string-array name="list_option_values">
+    <string-array name="dropdown_values">
         <item>option_1</item>
         <item>option_2</item>
         <item>option_3</item>
     </string-array>
 
-    <!-- MultiSelectListPreference 选项 -->
-    <string-array name="multi_select_options">
+    <!-- 单选列表选项 -->
+    <string-array name="list_entries">
+        <item>列表选项1</item>
+        <item>列表选项2</item>
+        <item>列表选项3</item>
+    </string-array>
+    <string-array name="list_values">
+        <item>item_1</item>
+        <item>item_2</item>
+        <item>item_3</item>
+    </string-array>
+
+    <!-- 多选列表选项 -->
+    <string-array name="multi_select_entries">
         <item>选项A</item>
         <item>选项B</item>
         <item>选项C</item>
     </string-array>
-
     <string-array name="multi_select_values">
         <item>value_a</item>
         <item>value_b</item>
         <item>value_c</item>
-    </string-array>
-
-    <string-array name="options_entries">
-        <item>选项1</item>
-        <item>选项2</item>
-        <item>选项3</item>
-    </string-array>
-
-    <string-array name="options_values">
-        <item>option_1</item>
-        <item>option_2</item>
-        <item>option_3</item>
     </string-array>
 </resources>
