@@ -47,6 +47,9 @@ dependencyResolutionManagement {
 
 ### 2. 添加依赖
 在模块的 `build.gradle.kts` 中添加以下依赖：
+
+![](https://img.shields.io/github/v/tag/halifox/androidx.preference.material3)
+
 ```kotlin
 dependencies {
     implementation("androidx.preference:preference-ktx-md3:1.2.1-alpha01")
