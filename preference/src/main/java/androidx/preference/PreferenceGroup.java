@@ -16,8 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,9 +28,9 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import androidx.annotation.RestrictTo;
 import androidx.collection.SimpleArrayMap;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jspecify.annotations.NonNull;
@@ -407,8 +405,7 @@ public abstract class PreferenceGroup extends Preference {
      * Returns true if we're between {@link #onAttached()} and {@link #onPrepareForRemoval()}
      *
      */
-    @RestrictTo(LIBRARY)
-    public boolean isAttached() {
+        public boolean isAttached() {
         return mAttachedToHierarchy;
     }
 
@@ -420,8 +417,7 @@ public abstract class PreferenceGroup extends Preference {
      * @param onExpandButtonClickListener The callback to be invoked
      * @see #setInitialExpandedChildrenCount(int)
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public void setOnExpandButtonClickListener(
+        public void setOnExpandButtonClickListener(
             @Nullable OnExpandButtonClickListener onExpandButtonClickListener) {
         mOnExpandButtonClickListener = onExpandButtonClickListener;
     }
@@ -433,8 +429,7 @@ public abstract class PreferenceGroup extends Preference {
      *
      * @return The callback to be invoked when the expand button is clicked.
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public @Nullable OnExpandButtonClickListener getOnExpandButtonClickListener() {
+        public @Nullable OnExpandButtonClickListener getOnExpandButtonClickListener() {
         return mOnExpandButtonClickListener;
     }
 
@@ -559,8 +554,7 @@ public abstract class PreferenceGroup extends Preference {
      *
      * @see #setInitialExpandedChildrenCount(int)
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public interface OnExpandButtonClickListener {
+        public interface OnExpandButtonClickListener {
         /**
          * Called when the expand button is clicked.
          */

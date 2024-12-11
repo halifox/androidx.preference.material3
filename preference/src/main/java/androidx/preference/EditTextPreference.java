@@ -25,6 +25,7 @@ import android.util.AttributeSet;
 import android.widget.EditText;
 
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -211,7 +212,7 @@ public class EditTextPreference extends DialogPreference {
     }
 
     /**
-     * A simple {@link androidx.preference.Preference.SummaryProvider} implementation for an
+     * A simple {@link SummaryProvider} implementation for an
      * {@link EditTextPreference}. If no value has been set, the summary displayed will be 'Not
      * set', otherwise the summary displayed will be the value set for this preference.
      */
@@ -223,10 +224,10 @@ public class EditTextPreference extends DialogPreference {
 
         /**
          * Retrieve a singleton instance of this simple
-         * {@link androidx.preference.Preference.SummaryProvider} implementation.
+         * {@link SummaryProvider} implementation.
          *
          * @return a singleton instance of this simple
-         * {@link androidx.preference.Preference.SummaryProvider} implementation
+         * {@link SummaryProvider} implementation
          */
         public static @NonNull SimpleSummaryProvider getInstance() {
             if (sSimpleSummaryProvider == null) {

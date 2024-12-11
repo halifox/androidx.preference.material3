@@ -16,12 +16,10 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.RestrictTo;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,7 +37,6 @@ import org.jspecify.annotations.NonNull;
  * class deprecated the API onInitializeAccessibilityNodeInfo.
  */
 @Deprecated
-@RestrictTo(LIBRARY_GROUP_PREFIX)
 public class PreferenceRecyclerViewAccessibilityDelegate
         extends RecyclerViewAccessibilityDelegate {
     @SuppressWarnings("WeakerAccess") /* synthetic access */

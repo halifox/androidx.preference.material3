@@ -16,13 +16,11 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import androidx.annotation.RestrictTo;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -35,7 +33,6 @@ import org.jspecify.annotations.Nullable;
  * Used by Leanback and Car.
  *
  */
-@RestrictTo(LIBRARY_GROUP_PREFIX)
 public class UnPressableLinearLayout extends LinearLayout {
     public UnPressableLinearLayout(@NonNull Context context) {
         this(context, null);

@@ -27,6 +27,7 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;

@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -38,7 +37,6 @@ import android.widget.TextView;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.RequiresApi;
-import androidx.annotation.RestrictTo;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -220,8 +218,7 @@ public abstract class PreferenceDialogFragment extends android.app.DialogFragmen
      * correctly attach the input method to the field.
      *
      */
-    @RestrictTo(LIBRARY)
-    protected boolean needInputMethod() {
+        protected boolean needInputMethod() {
         return false;
     }
 

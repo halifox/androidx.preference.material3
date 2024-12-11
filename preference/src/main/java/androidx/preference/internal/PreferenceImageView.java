@@ -16,7 +16,6 @@
 
 package androidx.preference.internal;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,7 +23,6 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import androidx.annotation.RestrictTo;
 import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
@@ -36,7 +34,6 @@ import org.jspecify.annotations.Nullable;
  * Used by Car.
  *
  */
-@RestrictTo(LIBRARY_GROUP_PREFIX)
 @SuppressLint("AppCompatCustomView")
 public class PreferenceImageView extends ImageView {
 

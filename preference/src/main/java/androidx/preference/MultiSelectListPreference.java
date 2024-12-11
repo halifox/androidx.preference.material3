@@ -25,6 +25,7 @@ import android.util.AttributeSet;
 
 import androidx.annotation.ArrayRes;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;

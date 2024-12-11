@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -33,9 +32,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.RestrictTo;
 import androidx.annotation.XmlRes;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -515,11 +514,9 @@ public abstract class PreferenceFragment extends android.app.Fragment implements
         onUnbindPreferences();
     }
 
-    @RestrictTo(LIBRARY)
-    protected void onBindPreferences() {}
+        protected void onBindPreferences() {}
 
-    @RestrictTo(LIBRARY)
-    protected void onUnbindPreferences() {}
+        protected void onUnbindPreferences() {}
 
     /**
      * @deprecated Use {@link PreferenceFragmentCompat} instead
@@ -645,8 +642,7 @@ public abstract class PreferenceFragment extends android.app.Fragment implements
      *
      * @return The {@link android.app.Fragment} to possibly use as a callback
      */
-    @RestrictTo(LIBRARY)
-    public android.app.Fragment getCallbackFragment() {
+        public android.app.Fragment getCallbackFragment() {
         return null;
     }
 

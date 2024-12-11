@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -25,7 +24,6 @@ import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.text.TextUtils;
 
-import androidx.annotation.RestrictTo;
 import androidx.core.content.ContextCompat;
 
 import org.jspecify.annotations.NonNull;
@@ -97,8 +95,7 @@ public class PreferenceManager {
      * Used by Settings.
      *
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public PreferenceManager(@NonNull Context context) {
+        public PreferenceManager(@NonNull Context context) {
         mContext = context;
 
         setSharedPreferencesName(getDefaultSharedPreferencesName(context));
@@ -202,8 +199,7 @@ public class PreferenceManager {
      *                        hierarchies into.
      * @return The root hierarchy (if one was not provided, the new hierarchy's root)
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public @NonNull PreferenceScreen inflateFromResource(@NonNull Context context, int resId,
+        public @NonNull PreferenceScreen inflateFromResource(@NonNull Context context, int resId,
             @Nullable PreferenceScreen rootPreferences) {
         // Block commits
         setNoCommit(true);

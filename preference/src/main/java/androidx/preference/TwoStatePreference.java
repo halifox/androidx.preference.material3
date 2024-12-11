@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,7 +26,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.annotation.RestrictTo;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -219,8 +217,7 @@ public abstract class TwoStatePreference extends Preference {
 
     /**
      */
-    @RestrictTo(LIBRARY)
-    protected void syncSummaryView(@NonNull View view) {
+        protected void syncSummaryView(@NonNull View view) {
         if (!(view instanceof TextView)) {
             return;
         }

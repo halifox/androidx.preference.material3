@@ -28,6 +28,8 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
+import androidx.preference.R;
+
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 

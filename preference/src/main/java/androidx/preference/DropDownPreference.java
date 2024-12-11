@@ -25,6 +25,8 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import androidx.preference.R;
+
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 

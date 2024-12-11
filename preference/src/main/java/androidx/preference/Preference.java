@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -42,10 +41,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.CallSuper;
-import androidx.annotation.RestrictTo;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.res.TypedArrayUtils;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -1162,8 +1161,7 @@ public class Preference implements Comparable<Preference> {
     /**
      * Used by Settings.
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    protected void performClick(@NonNull View view) {
+        protected void performClick(@NonNull View view) {
         performClick();
     }
 
@@ -1172,8 +1170,7 @@ public class Preference implements Comparable<Preference> {
      *
      * Used by Settings.
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public void performClick() {
+        public void performClick() {
 
         if (!isEnabled() || !isSelectable()) {
             return;
@@ -1318,8 +1315,7 @@ public class Preference implements Comparable<Preference> {
      * Used by Settings.
      *
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    protected void onAttachedToHierarchy(@NonNull PreferenceManager preferenceManager, long id) {
+        protected void onAttachedToHierarchy(@NonNull PreferenceManager preferenceManager, long id) {
         mId = id;
         mHasId = true;
         try {

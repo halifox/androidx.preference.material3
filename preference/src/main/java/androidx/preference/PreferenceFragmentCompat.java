@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -35,11 +34,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.RestrictTo;
 import androidx.annotation.XmlRes;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.preference.R;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -541,14 +540,12 @@ public abstract class PreferenceFragmentCompat extends Fragment implements
     /**
      * Used by Settings.
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    protected void onBindPreferences() {}
+        protected void onBindPreferences() {}
 
     /**
      * Used by Settings.
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    protected void onUnbindPreferences() {}
+        protected void onUnbindPreferences() {}
 
     @SuppressLint("UnknownNullness")
     public final RecyclerView getListView() {
@@ -681,8 +678,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements
      *
      * @return The {@link Fragment} to possibly use as a callback
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public @Nullable Fragment getCallbackFragment() {
+        public @Nullable Fragment getCallbackFragment() {
         return null;
     }
 

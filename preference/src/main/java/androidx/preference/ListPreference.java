@@ -26,6 +26,7 @@ import android.util.Log;
 
 import androidx.annotation.ArrayRes;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -318,7 +319,7 @@ public class ListPreference extends DialogPreference {
     }
 
     /**
-     * A simple {@link androidx.preference.Preference.SummaryProvider} implementation for a
+     * A simple {@link SummaryProvider} implementation for a
      * {@link ListPreference}. If no value has been set, the summary displayed will be 'Not set',
      * otherwise the summary displayed will be the entry set for this preference.
      */
@@ -330,10 +331,10 @@ public class ListPreference extends DialogPreference {
 
         /**
          * Retrieve a singleton instance of this simple
-         * {@link androidx.preference.Preference.SummaryProvider} implementation.
+         * {@link SummaryProvider} implementation.
          *
          * @return a singleton instance of this simple
-         * {@link androidx.preference.Preference.SummaryProvider} implementation
+         * {@link SummaryProvider} implementation
          */
         public static @NonNull SimpleSummaryProvider getInstance() {
             if (sSimpleSummaryProvider == null) {

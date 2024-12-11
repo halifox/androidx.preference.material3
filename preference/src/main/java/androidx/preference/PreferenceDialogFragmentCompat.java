@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -36,7 +35,6 @@ import android.widget.TextView;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.RequiresApi;
-import androidx.annotation.RestrictTo;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -202,8 +200,7 @@ public abstract class PreferenceDialogFragmentCompat extends DialogFragment impl
      * correctly attach the input method to the field.
      *
      */
-    @RestrictTo(LIBRARY)
-    protected boolean needInputMethod() {
+        protected boolean needInputMethod() {
         return false;
     }
 
@@ -214,8 +211,7 @@ public abstract class PreferenceDialogFragmentCompat extends DialogFragment impl
      * on-demand, so there is no longer a need to schedule showing soft-input when input connection
      * established by the focused editor.</p>
      */
-    @RestrictTo(LIBRARY)
-    protected void scheduleShowSoftInput() {
+        protected void scheduleShowSoftInput() {
     }
 
     /**

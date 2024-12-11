@@ -16,16 +16,13 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.annotation.SuppressLint;
 
-import androidx.annotation.RestrictTo;
 
 /**
  * Utility class for attributes unavailable on older APIs
  */
-@RestrictTo(LIBRARY)
 @SuppressLint("InlinedApi")
 public class AndroidResources {
 

@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -25,7 +24,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import androidx.annotation.RestrictTo;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -96,8 +94,7 @@ public class EditTextPreferenceDialogFragmentCompat extends PreferenceDialogFrag
         return (EditTextPreference) getPreference();
     }
 
-    @RestrictTo(LIBRARY)
-    @Override
+        @Override
     protected boolean needInputMethod() {
         // We want the input method to show, if possible, when dialog is displayed
         return true;
@@ -112,15 +109,13 @@ public class EditTextPreferenceDialogFragmentCompat extends PreferenceDialogFrag
         mShowRequestTime = pendingShowSoftInputRequest ? SystemClock.currentThreadTimeMillis() : -1;
     }
 
-    @RestrictTo(LIBRARY)
-    @Override
+        @Override
     protected void scheduleShowSoftInput() {
         setPendingShowSoftInputRequest(true);
         scheduleShowSoftInputInner();
     }
 
-    @RestrictTo(LIBRARY)
-    void scheduleShowSoftInputInner() {
+        void scheduleShowSoftInputInner() {
         if (hasPendingShowSoftInputRequest()) {
             if (mEditText == null || !mEditText.isFocused()) {
                 setPendingShowSoftInputRequest(false);

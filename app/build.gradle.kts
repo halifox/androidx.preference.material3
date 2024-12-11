@@ -39,7 +39,7 @@ dependencies {
 
 //    implementation(libs.androidx.core.ktx)
 //    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
+    implementation("com.google.android.material:material:1.12.0")
 //    implementation(libs.androidx.activity)
 //    implementation(libs.androidx.constraintlayout)
 //    testImplementation(libs.junit)
@@ -47,4 +47,6 @@ dependencies {
 //    androidTestImplementation(libs.androidx.espresso.core)
 
     implementation(project(":preference"))
+
+    implementation("androidx.preference:preference-ktx:1.2.1")
 }

@@ -23,8 +23,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.IdRes;
-import androidx.annotation.RestrictTo;
 import androidx.annotation.VisibleForTesting;
+import androidx.preference.R;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jspecify.annotations.NonNull;
@@ -60,7 +60,6 @@ public class PreferenceViewHolder extends RecyclerView.ViewHolder {
         }
     }
 
-    @RestrictTo(RestrictTo.Scope.LIBRARY)
     @VisibleForTesting
     public static @NonNull PreferenceViewHolder createInstanceForTests(@NonNull View itemView) {
         return new PreferenceViewHolder(itemView);

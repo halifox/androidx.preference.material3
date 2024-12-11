@@ -16,7 +16,6 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -26,9 +25,9 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 
-import androidx.annotation.RestrictTo;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -191,8 +190,7 @@ public class SwitchPreferenceCompat extends TwoStatePreference {
     /**
      * @param view
      */
-    @RestrictTo(LIBRARY)
-    @Override
+        @Override
     protected void performClick(@NonNull View view) {
         super.performClick(view);
         syncViewIfAccessibilityEnabled(view);

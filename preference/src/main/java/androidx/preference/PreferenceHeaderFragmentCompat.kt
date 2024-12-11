@@ -33,6 +33,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
 import androidx.slidingpanelayout.widget.SlidingPaneLayout
+import androidx.preference.R;
 
 /**
  * [PreferenceHeaderFragmentCompat] implements a two-pane fragment for preferences. The list pane is
@@ -58,7 +59,8 @@ import androidx.slidingpanelayout.widget.SlidingPaneLayout
  * detail pane.
  */
 abstract class PreferenceHeaderFragmentCompat :
-    Fragment(), PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
+    Fragment(),
+    PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
     private var onBackPressedCallback: OnBackPressedCallback? = null
 
     /**

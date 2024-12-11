@@ -16,14 +16,13 @@
 
 package androidx.preference;
 
-import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import androidx.annotation.RestrictTo;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.R;
 
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
@@ -51,8 +50,7 @@ public final class PreferenceScreen extends PreferenceGroup {
      * Used by Settings :)
      *
      */
-    @RestrictTo(LIBRARY_GROUP_PREFIX)
-    public PreferenceScreen(@NonNull Context context, @Nullable AttributeSet attrs) {
+        public PreferenceScreen(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs, TypedArrayUtils.getAttr(context, R.attr.preferenceScreenStyle,
                 android.R.attr.preferenceScreenStyle));
     }
