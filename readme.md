@@ -25,9 +25,36 @@
 
 ## 🛠️ 使用方法
 
+### 1. 配置依赖源
+在项目的 `settings.gradle.kts` 中添加以下内容：
 ```kotlin
-
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //添加如下
+        maven {
+            url = uri("https://maven.pkg.github.com/halifox/androidx.preference.material3")
+            credentials {
+                username = "halifox"
+                password = "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" // 测试密钥（只读，无期限）
+            }
+        }
+    }
+}
 ```
+
+### 2. 添加依赖
+在模块的 `build.gradle.kts` 中添加以下依赖：
+```kotlin
+dependencies {
+    implementation("androidx.preference:preference-ktx-md3:1.2.1-alpha01")
+}
+```
+
+### 3. 使用方法
+所有 API 与 `androidx.preference` 完全相同，无需任何修改。详情请参考 [官方 API 文档](https://developer.android.com/jetpack/androidx/releases/preference)。
 
 ---
 
