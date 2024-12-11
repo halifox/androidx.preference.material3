@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -8,7 +8,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 21
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -31,24 +31,15 @@ android {
         jvmTarget = "11"
     }
 }
-
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-
     api("org.jspecify:jspecify:1.0.0")
-    api("androidx.annotation:annotation:1.8.1")
-    api("androidx.appcompat:appcompat:1.1.0")
-    // Use the latest version of core library for verifying insets visibility
-    api("androidx.core:core:1.6.0")
-    implementation("androidx.collection:collection:1.4.2")
-    api("androidx.activity:activity-ktx:1.5.1")
-    api("androidx.fragment:fragment-ktx:1.3.6")
-    api("androidx.recyclerview:recyclerview:1.0.0")
+    api("androidx.annotation:annotation:1.9.1")
+    api("androidx.appcompat:appcompat:1.7.0")
+    api("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.collection:collection-ktx:1.4.5")
+    api("androidx.activity:activity-ktx:1.9.3")
+    api("androidx.fragment:fragment-ktx:1.8.5")
+    api("androidx.recyclerview:recyclerview:1.3.2")
     api("androidx.slidingpanelayout:slidingpanelayout:1.2.0")
+    api("com.google.android.material:material:1.12.0")
 }
