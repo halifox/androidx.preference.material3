@@ -16,6 +16,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         maven {
             url = uri("https://maven.pkg.github.com/halifox/androidx.preference.material3")
             credentials {
