@@ -117,8 +117,10 @@ public abstract class PreferenceFragmentCompat extends Fragment implements
     RecyclerView mList;
     private boolean mHavePrefs;
     private boolean mInitDone;
-    private int mLayoutResId = R.layout.preference_list_fragment;
+    protected int mLayoutResId = R.layout.preference_list_fragment;
     private Runnable mSelectPreferenceRunnable;
+
+    protected ViewGroup listContainer;
 
     private final Handler mHandler = new Handler(Looper.getMainLooper()) {
         @Override
@@ -206,7 +208,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements
                     + "'android.R.id.list_container' that is not a ViewGroup class");
         }
 
-        final ViewGroup listContainer = (ViewGroup) rawListContainer;
+        listContainer = (ViewGroup) rawListContainer;
 
         final RecyclerView listView = onCreateRecyclerView(themedInflater, listContainer,
                 savedInstanceState);

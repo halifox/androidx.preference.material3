@@ -57,7 +57,34 @@ dependencies {
 ```
 
 ### 3. 使用方法
-所有 API 与 `androidx.preference` 完全相同，无需任何修改。详情请参考 [官方 API 文档](https://developer.android.com/jetpack/androidx/releases/preference)。
+
+`androidx.preference` 内的api可以直接无缝迁移和使用。详情请参考 [官方 API 文档](https://developer.android.com/jetpack/androidx/releases/preference)。
+
+以下是新增功能
+
+1. `PreferenceFragmentWithToolbar` 是一个添加 CoordinatorLayout + AppBarLayout + Toolbar 的 Preference 布局
+
+使用示例
+```kotlin
+package com.github.preference
+
+import android.os.Bundle
+import android.view.View
+import androidx.preference.PreferenceFragmentWithToolbar
+
+class DemoPreferenceFragmentCompat : PreferenceFragmentWithToolbar() {
+   override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+      setPreferencesFromResource(R.xml.preferences, rootKey)
+   }
+
+   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+      super.onViewCreated(view, savedInstanceState)
+      toolbar.title = "设置"
+   }
+}
+```
+![Screenshot_20241213_130615.webp](screenshot%2FScreenshot_20241213_130615.webp)
+![Screenshot_20241213_130630.webp](screenshot%2FScreenshot_20241213_130630.webp)
 
 ---
 
