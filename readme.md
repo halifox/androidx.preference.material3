@@ -88,6 +88,25 @@ class DemoPreferenceFragmentCompat : PreferenceFragmentWithToolbar() {
 |---|---|
 |![Screenshot_20241213_130615.webp](screenshot%2FScreenshot_20241213_130615.webp)|![Screenshot_20241213_130630.webp](screenshot%2FScreenshot_20241213_130630.webp)|
 
+
+2. 添加`ButtonPreference`
+
+使用示例
+```xml
+        <ButtonPreference
+            android:key="ButtonPreference"
+            android:summary="一个简单的按钮设置项"
+            android:title="按钮设置项"
+            android:text="按钮"
+            />
+```
+
+|||
+|---|---|
+|![Screenshot_20241213_170934.webp](screenshot%2FScreenshot_20241213_170934.webp)||
+
+
+
 ---
 
 ## 路线图
