@@ -62,6 +62,8 @@
         <attr name="switchPreferenceCompatStyle" format="reference" />
         <!-- Default style for seekbar preferences. -->
         <attr name="seekBarPreferenceStyle" format="reference" />
+
+        <attr name="buttonPreferenceStyle" format="reference" />
     </declare-styleable>
 
     <!-- Base attributes available to PreferenceFragment. -->
@@ -343,6 +345,10 @@
         <attr name="android:disableDependentsState" />
     </declare-styleable>
 
+    <declare-styleable name="ButtonPreference">
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="android:text" format="string" localization="suggested" />
+    </declare-styleable>
     <!-- Base attributes available to PreferenceFragment. -->
     <declare-styleable name="PreferenceFragment">
         <!-- The layout for the PreferenceFragment. This should rarely need to be changed. -->

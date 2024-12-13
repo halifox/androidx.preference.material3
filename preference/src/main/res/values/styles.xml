@@ -87,6 +87,12 @@
         <item name="android:switchTextOff">@string/v7_preference_off</item>
     </style>
 
+    <style name="Preference.ButtonPreference">
+        <item name="android:widgetLayout">@layout/preference_widget_button</item>
+        <item name="android:switchTextOn">@string/v7_preference_on</item>
+        <item name="android:switchTextOff">@string/v7_preference_off</item>
+    </style>
+
     <style name="Preference.Material">
         <item name="android:layout">@layout/preference_material</item>
         <item name="allowDividerAbove">false</item>
@@ -123,6 +129,14 @@
     </style>
 
     <style name="Preference.SwitchPreference.Material">
+        <item name="android:layout">@layout/preference_material</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">true</item>
+        <item name="singleLineTitle">false</item>
+        <item name="iconSpaceReserved">@bool/config_materialPreferenceIconSpaceReserved</item>
+    </style>
+
+    <style name="Preference.ButtonPreference.Material">
         <item name="android:layout">@layout/preference_material</item>
         <item name="allowDividerAbove">false</item>
         <item name="allowDividerBelow">true</item>
