@@ -6,66 +6,73 @@
         android:key="general_settings"
         android:title="常规设置">
 
+        <ButtonPreference
+            android:key="ButtonPreference"
+            android:summary="一个简单的按钮设置项"
+            android:title="按钮设置项"
+            android:text="按钮"
+            />
+
         <!-- 普通设置项 -->
         <Preference
             android:key="simple_preference"
-            android:title="普通设置项"
-            android:summary="一个简单的偏好设置项"/>
+            android:summary="一个简单的偏好设置项"
+            android:title="普通设置项" />
 
         <!-- 单选框: 勾选框 -->
         <CheckBoxPreference
+            android:defaultValue="true"
             android:key="enable_feature"
-            android:title="启用功能"
             android:summary="启用/禁用某个功能"
-            android:defaultValue="true"/>
+            android:title="启用功能" />
 
         <!-- 下拉列表选择框 -->
         <DropDownPreference
-            android:key="dropdown_option"
-            android:title="选择模式"
-            android:summary="从下拉列表中选择选项"
+            android:defaultValue="option_1"
             android:entries="@array/dropdown_entries"
             android:entryValues="@array/dropdown_values"
-            android:defaultValue="option_1"/>
+            android:key="dropdown_option"
+            android:summary="从下拉列表中选择选项"
+            android:title="选择模式" />
 
         <!-- 文本编辑框 -->
         <EditTextPreference
+            android:inputType="text"
             android:key="user_input"
-            android:title="输入设置"
             android:summary="用户输入一个文本"
-            android:inputType="text"/>
+            android:title="输入设置" />
 
         <!-- 单选列表 -->
         <ListPreference
-            android:key="list_preference"
-            android:title="选择列表项"
-            android:summary="从选项中选择"
+            android:defaultValue="item_1"
             android:entries="@array/list_entries"
             android:entryValues="@array/list_values"
-            android:defaultValue="item_1"/>
+            android:key="list_preference"
+            android:summary="从选项中选择"
+            android:title="选择列表项" />
 
         <!-- 多选列表框 -->
         <MultiSelectListPreference
-            android:key="multi_select_preference"
-            android:title="多选设置"
-            android:summary="可以选择多个选项"
             android:entries="@array/multi_select_entries"
-            android:entryValues="@array/multi_select_values"/>
+            android:entryValues="@array/multi_select_values"
+            android:key="multi_select_preference"
+            android:summary="可以选择多个选项"
+            android:title="多选设置" />
 
         <!-- 滑块设置 -->
         <SeekBarPreference
-            android:key="slider_setting"
-            android:title="滑动条设置"
-            android:summary="调节滑动设置"
             android:defaultValue="50"
-            android:max="100"/>
+            android:key="slider_setting"
+            android:max="100"
+            android:summary="调节滑动设置"
+            android:title="滑动条设置" />
 
         <!-- 开关选择框 -->
         <SwitchPreference
+            android:defaultValue="false"
             android:key="switch_feature"
-            android:title="启用新模式"
             android:summary="切换启用状态"
-            android:defaultValue="false"/>
+            android:title="启用新模式" />
 
     </PreferenceCategory>
 

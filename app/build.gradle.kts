@@ -45,7 +45,7 @@ dependencies {
 //    testImplementation(libs.junit)
 //    androidTestImplementation(libs.androidx.junit)
 //    androidTestImplementation(libs.androidx.espresso.core)
-//    implementation(project(":preference"))
+    implementation(project(":preference"))
 //    implementation("androidx.preference:preference-ktx-md3:1.2.1-alpha01")
-    implementation("androidx.preference:preference-ktx-md3:dev")
+//    implementation("androidx.preference:preference-ktx-md3:dev")
 }
