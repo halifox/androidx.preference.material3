@@ -83,8 +83,10 @@ class DemoPreferenceFragmentCompat : PreferenceFragmentWithToolbar() {
    }
 }
 ```
-![Screenshot_20241213_130615.webp](screenshot%2FScreenshot_20241213_130615.webp)
-![Screenshot_20241213_130630.webp](screenshot%2FScreenshot_20241213_130630.webp)
+
+|||
+|---|---|
+|![Screenshot_20241213_130615.webp](screenshot%2FScreenshot_20241213_130615.webp)|![Screenshot_20241213_130630.webp](screenshot%2FScreenshot_20241213_130630.webp)|
 
 ---
 
