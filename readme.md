@@ -29,30 +29,22 @@
 在项目的 `settings.gradle.kts` 中添加以下内容：
 ```kotlin
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        //添加如下
-        maven {
-            url = uri("https://maven.pkg.github.com/halifox/androidx.preference.material3")
-            credentials {
-                username = "halifox"
-                password = "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" // 测试密钥（只读，无期限）
-            }
-        }
-    }
+   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+   repositories {
+      mavenCentral()
+      maven { setUrl("https://jitpack.io") }
+   }
 }
 ```
 
 ### 2. 添加依赖
 在模块的 `build.gradle.kts` 中添加以下依赖：
 
-![](https://img.shields.io/github/v/tag/halifox/androidx.preference.material3)
+![](https://jitpack.io/v/halifox/androidx.preference.material3.svg)
 
 ```kotlin
 dependencies {
-    implementation("androidx.preference:preference-ktx-md3:1.2.1-alpha01")
+   implementation("com.github.halifox:androidx.preference.material3:Tag")
 }
 ```
 
