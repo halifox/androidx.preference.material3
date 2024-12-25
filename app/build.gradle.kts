@@ -48,4 +48,6 @@ dependencies {
     implementation(project(":preference"))
 //    implementation("androidx.preference:preference-ktx-md3:1.2.1-alpha01")
 //    implementation("androidx.preference:preference-ktx-md3:dev")
+//    implementation("com.github.halifox:androidx.preference.material3:Tag")
+//    implementation("com.github.halifox:androidx.preference.material3:1.2.1-alpha07")
 }
