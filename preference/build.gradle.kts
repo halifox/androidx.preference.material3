@@ -49,22 +49,12 @@ tasks.withType<JavaCompile> {
 }
 afterEvaluate {
     publishing {
-        repositories {
-            maven {
-                name = "github"
-                setUrl("https://maven.pkg.github.com/halifox/androidx.preference.material3")
-                credentials {
-                    username = System.getenv("GITHUB_ACTOR")
-                    password = System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
         publications {
             create<MavenPublication>("maven") {
                 from(components["release"])
                 groupId = "androidx.preference"
                 artifactId = "preference-ktx-md3"
-                version = System.getenv("VERSION") ?: "dev"
+                version = "1.0.0"
             }
         }
     }
